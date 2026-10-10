@@ -2,7 +2,7 @@
 
 
 :root {
-    --color-primary: #e63946;
+    --color-primary: #e63947;
     --color-primary-dark: #c1272d;
     --color-accent: #f4a300;
     --color-dark: #201a17;
@@ -25,9 +25,7 @@ body {
     line-height: 1.6;
 }
 
-h1,
-h2,
-h3 {
+h1, h2, h3 {
     font-family: var(--font-titulo);
     font-weight: 400;
     letter-spacing: 0.5px;
@@ -43,7 +41,7 @@ ul {
 }
 
 img {
-    min-width: 100%;
+    max-width: 100%;
     display: block;
 }
 
@@ -90,7 +88,6 @@ img {
     font-size: 1.4rem;
     color: #fff;
     letter-spacing: 1px;
-
 }
 
 .menu-links {
@@ -126,4 +123,81 @@ img {
     max-width: 1100px;
     margin: 0 auto;
     display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 48px;
+    color: #fff;
+}
+
+.destaque-texto {
+    flex: 1 1 400px;
+}
+
+.destaque h1 {
+    font-size: 3rem;
+    line-height: 1.15;
+    margin-bottom: 20px;
+    color: var(--color-accent);
+}
+
+.destaque p {
+    font-size: 1.15rem;
+    color: #e8d9cd;
+    max-width: 480px;
+    margin-bottom: 32px;
+}
+
+.destaque-imagem {
+    flex: 1 1 260px;
+    max-width: 420px;
+    border-radius: var(--radius);
+    overflow: hidden;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.35);
+}
+
+.destaque-imagem img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.cardapio {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 80px 24px;
+    text-align: center;
+}
+
+.cardapio h2 {
+    font-size: 2.2rem;
+    margin-bottom: 48px;
+}
+
+.cardapio-itens {
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+.cardapio-item {
+    background: var(--color-light);
+    border-radius: var(--radius);
+    padding: 28px;
+    flex: 1 1 220px;
+    max-width: 260px;
+    position: relative;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.cardapio-item:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);
+}
+
+.selo {
+    position: absolute;
+    top: -10px;
+    right: 16px;
+    
 }
